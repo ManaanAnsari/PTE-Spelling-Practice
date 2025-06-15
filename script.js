@@ -4,6 +4,8 @@ let correctCount = 0;
 let incorrectCount = 0;
 let totalAsked = 0;
 let totalWords = 0;
+let selectedWordCount = 0; // Number of words user wants to test
+let wordsToTest = []; // Subset of words to test
 let isChecked = false;
 let incorrectWords = [];
 
@@ -31,12 +33,54 @@ async function loadWords() {
             .map(word => word.trim())
             .filter(word => word.length > 0);
         totalWords = words.length;
-        remainingCountElement.textContent = totalWords;
-        loadNewWord();
+        
+        // Ask user how many words they want to test
+        askForWordCount();
     } catch (error) {
         console.error('Error loading words:', error);
         resultElement.textContent = 'Error loading words. Please check the words.txt file.';
     }
+}
+
+// Ask user for number of words to test
+function askForWordCount() {
+    let count;
+    do {
+        const input = prompt(`How many words would you like to test? (Available: ${totalWords} words)`);
+        
+        // If user cancels, use all words
+        if (input === null) {
+            count = totalWords;
+            break;
+        }
+        
+        count = parseInt(input);
+        
+        if (isNaN(count) || count <= 0) {
+            alert('Please enter a valid positive number.');
+            continue;
+        }
+        
+        if (count > totalWords) {
+            alert(`You can't test more than ${totalWords} words. Using all available words.`);
+            count = totalWords;
+        }
+        
+        break;
+    } while (true);
+    
+    selectedWordCount = count;
+    initializeWordTest();
+}
+
+// Initialize the word test with selected number of words
+function initializeWordTest() {
+    // Shuffle and select the specified number of words
+    const shuffledWords = [...words].sort(() => Math.random() - 0.5);
+    wordsToTest = shuffledWords.slice(0, selectedWordCount);
+    
+    remainingCountElement.textContent = wordsToTest.length;
+    loadNewWord();
 }
 
 // Update incorrect words list
@@ -59,16 +103,25 @@ function toggleIncorrectWords() {
 
 // Load a new word
 function loadNewWord() {
-    if (words.length === 0) {
+    if (wordsToTest.length === 0) {
         currentWordElement.textContent = 'No more words!';
         userInput.disabled = true;
         checkBtn.disabled = true;
+        
+        // Show final results
+        const accuracy = totalAsked > 0 ? ((correctCount / totalAsked) * 100).toFixed(1) : 0;
+        resultElement.innerHTML = `
+            <strong>Test Complete!</strong><br>
+            Tested ${selectedWordCount} words<br>
+            Accuracy: ${accuracy}%
+        `;
+        resultElement.className = 'correct';
         return;
     }
 
-    const randomIndex = Math.floor(Math.random() * words.length);
-    currentWord = words[randomIndex].trim();
-    words.splice(randomIndex, 1);
+    const randomIndex = Math.floor(Math.random() * wordsToTest.length);
+    currentWord = wordsToTest[randomIndex].trim();
+    wordsToTest.splice(randomIndex, 1);
     
     currentWordElement.textContent = '?';
     userInput.value = '';
@@ -79,7 +132,7 @@ function loadNewWord() {
     isChecked = false;
     
     // Update remaining count
-    remainingCountElement.textContent = words.length;
+    remainingCountElement.textContent = wordsToTest.length;
     
     // Automatically focus on the input field
     userInput.focus();
