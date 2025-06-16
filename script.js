@@ -8,6 +8,7 @@ let selectedWordCount = 0; // Number of words user wants to test
 let wordsToTest = []; // Subset of words to test
 let isChecked = false;
 let incorrectWords = [];
+let dictionaryCache = {}; // Local cache for word definitions
 
 // DOM elements
 const currentWordElement = document.getElementById('current-word');
@@ -23,10 +24,59 @@ const remainingCountElement = document.getElementById('remaining-count');
 const resultElement = document.getElementById('result');
 const toggleIncorrectBtn = document.getElementById('toggle-incorrect-btn');
 const incorrectWordsList = document.getElementById('incorrect-words-list');
+const exportBtn = document.getElementById('export-btn');
+const apiToggle = document.getElementById('api-toggle');
+
+// Load dictionary cache from JSON file
+async function loadDictionaryCache() {
+    try {
+        const response = await fetch('dictionary.json');
+        if (response.ok) {
+            dictionaryCache = await response.json();
+            console.log(`Loaded ${Object.keys(dictionaryCache).length} cached definitions`);
+        } else {
+            // File doesn't exist, start with empty cache
+            dictionaryCache = {};
+            console.log('No existing dictionary cache found, starting fresh');
+        }
+    } catch (error) {
+        console.log('No dictionary cache file found, starting fresh');
+        dictionaryCache = {};
+    }
+}
+
+// Save dictionary cache to JSON file
+async function saveDictionaryCache() {
+    try {
+        // Create a blob with the JSON data
+        const jsonData = JSON.stringify(dictionaryCache, null, 2);
+        const blob = new Blob([jsonData], { type: 'application/json' });
+        
+        // Create download link
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'dictionary.json';
+        a.style.display = 'none';
+        
+        // Trigger download
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        
+        console.log('Dictionary cache saved! Please place the downloaded file in your project folder.');
+    } catch (error) {
+        console.error('Error saving dictionary cache:', error);
+    }
+}
 
 // Load words from file
 async function loadWords() {
     try {
+        // Load dictionary cache first
+        await loadDictionaryCache();
+        
         const response = await fetch('words.txt');
         const text = await response.text();
         words = text.split('\n')
@@ -147,8 +197,99 @@ function speakWord() {
     }
 }
 
+// Fetch word meaning from cache or API
+async function fetchWordMeaning(word) {
+    const wordKey = word.toLowerCase();
+    
+    // Check cache first
+    if (dictionaryCache[wordKey]) {
+        console.log(`Found definition for "${word}" in cache`);
+        return dictionaryCache[wordKey];
+    }
+    
+    // Check if API calls are disabled
+    if (!apiToggle.checked) {
+        console.log(`API calls disabled - no definition found for "${word}"`);
+        return null;
+    }
+    
+    console.log(`Fetching definition for "${word}" from API`);
+    
+    try {
+        const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
+        
+        if (!response.ok) {
+            // Cache the null result to avoid repeated API calls for invalid words
+            dictionaryCache[wordKey] = null;
+            return null;
+        }
+        
+        const data = await response.json();
+        
+        if (data && data.length > 0) {
+            const wordData = data[0];
+            
+            // Get the first meaning and definition
+            if (wordData.meanings && wordData.meanings.length > 0) {
+                const meaning = wordData.meanings[0];
+                const definition = meaning.definitions && meaning.definitions.length > 0 
+                    ? meaning.definitions[0].definition 
+                    : null;
+                
+                const meaningData = {
+                    partOfSpeech: meaning.partOfSpeech || '',
+                    definition: definition || '',
+                    phonetic: wordData.phonetic || '',
+                    example: meaning.definitions[0]?.example || ''
+                };
+                
+                // Cache the result
+                dictionaryCache[wordKey] = meaningData;
+                console.log(`Cached definition for "${word}"`);
+                
+                return meaningData;
+            }
+        }
+        
+        // Cache null result if no valid data found
+        dictionaryCache[wordKey] = null;
+        return null;
+    } catch (error) {
+        console.error('Error fetching word meaning:', error);
+        return null;
+    }
+}
+
+// Display word meaning
+function displayWordMeaning(meaningData) {
+    if (!meaningData) {
+        return '<div class="word-meaning"><em>Definition not available</em></div>';
+    }
+    
+    let meaningHtml = '<div class="word-meaning">';
+    meaningHtml += `<strong>Definition:</strong> `;
+    
+    if (meaningData.partOfSpeech) {
+        meaningHtml += `<em>(${meaningData.partOfSpeech})</em> `;
+    }
+    
+    meaningHtml += meaningData.definition;
+    
+    if (meaningData.phonetic) {
+        meaningHtml += `<br><strong>Pronunciation:</strong> ${meaningData.phonetic}`;
+    }
+    
+    if (meaningData.example) {
+        meaningHtml += `<br><strong>Example:</strong> "${meaningData.example}"`;
+    }
+    
+    meaningHtml += '</div>';
+    
+    return meaningHtml;
+}
+
 // Check the user's answer
-function checkAnswer() {
+async function checkAnswer() {
     if (isChecked) return;
 
     const userAnswer = userInput.value.trim().toLowerCase();
@@ -158,11 +299,14 @@ function checkAnswer() {
     totalElement.textContent = totalAsked;
     totalIncorrectElement.textContent = totalAsked;
 
+    let resultText = '';
+    let resultClass = '';
+
     if (userAnswer === correctAnswer) {
         correctCount++;
         correctCountElement.textContent = correctCount;
-        resultElement.textContent = 'Correct!';
-        resultElement.className = 'correct';
+        resultText = 'Correct!';
+        resultClass = 'correct';
     } else {
         incorrectCount++;
         incorrectCountElement.textContent = incorrectCount;
@@ -171,9 +315,17 @@ function checkAnswer() {
             userSpelling: userInput.value.trim()
         });
         updateIncorrectWordsList();
-        resultElement.textContent = `Incorrect! The correct spelling is: ${currentWord}`;
-        resultElement.className = 'incorrect';
+        resultText = `Incorrect! The correct spelling is: ${currentWord}`;
+        resultClass = 'incorrect';
     }
+
+    // Fetch and display word meaning
+    resultElement.innerHTML = `<div class="${resultClass}">${resultText}</div><div class="loading-meaning">Loading definition...</div>`;
+    
+    const meaningData = await fetchWordMeaning(currentWord);
+    const meaningHtml = displayWordMeaning(meaningData);
+    
+    resultElement.innerHTML = `<div class="${resultClass}">${resultText}</div>${meaningHtml}`;
 
     isChecked = true;
     userInput.disabled = true;
@@ -181,11 +333,30 @@ function checkAnswer() {
     nextBtn.disabled = false;
 }
 
+// Export dictionary function for button
+function exportDictionary() {
+    const cacheCount = Object.keys(dictionaryCache).length;
+    if (cacheCount === 0) {
+        alert('No definitions cached yet. Test some words first!');
+        return;
+    }
+    
+    saveDictionaryCache();
+    alert(`Dictionary exported with ${cacheCount} definitions!\nReplace your dictionary.json file with the downloaded file.`);
+}
+
 // Event listeners
 speakBtn.addEventListener('click', speakWord);
 checkBtn.addEventListener('click', checkAnswer);
 nextBtn.addEventListener('click', loadNewWord);
 toggleIncorrectBtn.addEventListener('click', toggleIncorrectWords);
+exportBtn.addEventListener('click', exportDictionary);
+
+// API toggle event listener
+apiToggle.addEventListener('change', function() {
+    const status = this.checked ? 'enabled' : 'disabled';
+    console.log(`Dictionary API calls ${status}`);
+});
 
 // Add Enter key listener to input field
 userInput.addEventListener('keypress', (event) => {

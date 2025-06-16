@@ -1,5 +1,7 @@
 .env
 node_modules
+temp_auto_push.bat
 *words*
 mistakes
-processed.txt
+processed.txt.gitignore
+temp_interactive_push.bat
