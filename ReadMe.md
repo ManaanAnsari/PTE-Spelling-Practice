@@ -1,72 +1,168 @@
-# Spelling Test Web App
+# 🎯 Multiplayer Spelling Game
 
-A simple and interactive web application to help you practice and improve your spelling skills. The app reads words aloud and tests your ability to spell them correctly.
+A real-time 1v1 spelling competition game where players compete to spell words correctly and see who wins!
 
-## Features
+## 🚀 Features
 
-- **Word Pronunciation**: Hear the word spoken aloud using text-to-speech
-- **Interactive Testing**: Type your answer and get immediate feedback
-- **Score Tracking**: Keep track of correct and incorrect answers
-- **Progress Monitoring**: See how many words you've attempted and how many remain
-- **Incorrect Words List**: View a list of words you've misspelled with your incorrect attempts
-- **Keyboard Shortcuts**:
-  - `Enter`: Check your answer or move to the next word
-  - `Space`: Hear the current word spoken aloud
+- **🏠 Room System**: Create or join rooms with unique IDs
+- **⚡ Real-time Competition**: Live score updates and progress tracking
+- **🎮 Multiple Modes**: Choose word count (10, 25, 50, 100 words)
+- **🎉 Winner Animations**: Confetti for winners, animations for results
+- **📊 Detailed Results**: See both players' scores and mistakes
+- **🔊 Audio Support**: Text-to-speech for word pronunciation
+- **📱 Responsive Design**: Works on desktop and mobile
 
-## How to Use
+## 🛠️ Setup Instructions
 
-1. **Setup**:
-   - Place all files (`index.html`, `styles.css`, `script.js`, and `words.txt`) in the same directory
-   - Open `index.html` in a web browser
+### Prerequisites
+- Node.js (version 14 or higher)
+- npm (Node Package Manager)
 
-2. **Taking the Test**:
-   - Click the "Speak Word" button or press `Space` to hear the word
-   - Type your answer in the text box
-   - Press `Enter` or click "Check" to verify your answer
-   - Press `Enter` or click "Next" to move to the next word
+### Installation
 
-3. **Viewing Results**:
-   - Your score is displayed at the top of the page
-   - Click "Show Incorrect Words" to see words you've misspelled
-   - Each incorrect word shows both the correct spelling and your attempt
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-## File Structure
+2. **Ensure you have your word list**
+   - Make sure `words.txt` exists in the project root
+   - Each word should be on a separate line
 
-- `index.html`: The main interface of the application
-- `styles.css`: Styling for the application
-- `script.js`: Core functionality and logic
-- `words.txt`: List of words to practice (one word per line)
-simply rename sample-words.txt to words.txt and add your own words.
+3. **Start the Server**
+   ```bash
+   npm start
+   ```
+   
+   For development with auto-restart:
+   ```bash
+   npm run dev
+   ```
 
-## Customization
+4. **Open the Game**
+   - Open your browser and go to `http://localhost:3000/multiplayer.html`
+   - Share this URL with your friend to play together!
 
-You can customize the words to practice by editing the `words.txt` file:
-- Add or remove words
-- One word per line
-- Words can be of any length
-- Empty lines are ignored
+## 🎮 How to Play
 
-## Browser Compatibility
+### Creating a Room
+1. Enter your name
+2. Click "Create Room"
+3. Choose number of words (10-100)
+4. Share the Room ID with your opponent
+5. Click "Ready" when both players have joined
+6. Game starts automatically when both players are ready!
 
-The app works best in modern browsers that support:
-- Web Speech API (for text-to-speech)
-- Modern JavaScript features
-- CSS Flexbox
+### Joining a Room
+1. Enter your name
+2. Click "Join Room"
+3. Enter the Room ID shared by your friend
+4. Click "Ready" when you're prepared to play
 
-## Keyboard Controls
+### During the Game
+- **Listen**: Click 🔊 to hear the word pronunciation
+- **Type**: Enter your spelling in the text field
+- **Submit**: Press Enter or click "Check"
+- **Progress**: Watch real-time score updates for both players
+- **Next**: Move to the next word after checking
 
-- `Space`: Speak the current word
-- `Enter`: 
-  - When typing: Check your answer
-  - After checking: Move to the next word
+### Winning
+- Player with the most correct spellings wins!
+- Enjoy confetti animation if you win! 🎉
+- See detailed results including all mistakes
 
-## Score Tracking
+## 📁 File Structure
 
-The app tracks:
-- Correct answers: Shows as "Correct: X/Y"
-- Incorrect answers: Shows as "Incorrect: X/Y"
-- Remaining words: Shows how many words are left to practice
+```
+multiplayer-spelling-game/
+├── server.js              # Node.js server with Socket.IO
+├── multiplayer.html       # Main multiplayer interface
+├── multiplayer-script.js  # Frontend JavaScript logic
+├── multiplayer-styles.css # Styling and animations
+├── package.json          # Dependencies and scripts
+├── words.txt             # Word list for the game
+└── README.md             # This file
+```
 
-Where:
-- X = Number of correct/incorrect answers
-- Y = Total number of words attempted
+## 🔧 Technical Details
+
+### Backend (server.js)
+- **Express.js**: Web server
+- **Socket.IO**: Real-time communication
+- **Room Management**: Create/join rooms with unique IDs
+- **Game State**: Track scores, progress, and game status
+- **Word Selection**: Random word selection from your word list
+
+### Frontend
+- **Real-time Updates**: Live score tracking
+- **Screen Management**: Multiple game screens (menu, lobby, game, results)
+- **Animations**: Winner/loser animations with CSS
+- **Responsive Design**: Mobile-friendly interface
+
+## 🎨 Customization
+
+### Adding More Words
+- Edit `words.txt` file
+- Add one word per line
+- Restart the server
+
+### Changing Game Settings
+- Modify word count options in `multiplayer.html`
+- Adjust animations in `multiplayer-styles.css`
+- Customize server settings in `server.js`
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+**Server won't start:**
+- Check if port 3000 is available
+- Run `npm install` to ensure dependencies are installed
+
+**Players can't connect:**
+- Make sure both players use the same server URL
+- Check if firewall is blocking the connection
+
+**Words not loading:**
+- Ensure `words.txt` exists in the project root
+- Check file permissions
+
+## 🚀 Deployment
+
+For production deployment:
+
+1. **Set Environment Variables**
+   ```bash
+   export PORT=3000
+   ```
+
+2. **Start in Production Mode**
+   ```bash
+   npm start
+   ```
+
+3. **Use a Process Manager** (recommended)
+   ```bash
+   npm install -g pm2
+   pm2 start server.js --name "spelling-game"
+   ```
+
+## 🎯 Game Flow
+
+```
+Player 1 Creates Room → Gets Room ID
+Player 2 Joins Room → Enters Room ID
+Both Players Ready → Game Starts
+Same Words, Same Order → Real-time Competition
+Both Finish → Results Screen → Winner/Loser Animations
+```
+
+## 🏆 Features in Detail
+
+- **Fair Play**: Both players get the same words in the same order
+- **Progress Tracking**: Visual progress bars show completion status
+- **Mistake Recording**: All incorrect spellings are tracked and displayed
+- **Accuracy Calculation**: Final accuracy percentage for both players
+- **Graceful Disconnection**: Handle player leaving mid-game
+
+Enjoy your multiplayer spelling competition! 🎉

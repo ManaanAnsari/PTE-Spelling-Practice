@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Spelling Game</title>
+    <link rel="stylesheet" href="multiplayer-styles.css">
+</head>
+<body>
+    <!-- Main Menu Screen -->
+    <div id="main-menu" class="screen active">
+        <div class="container">
+            <h1>🎯 Multiplayer Spelling Game</h1>
+            <div class="player-info">
+                <input type="text" id="player-name" placeholder="Enter your name..." maxlength="20">
+            </div>
+            <div class="menu-buttons">
+                <button id="create-room-btn" class="primary-btn">Create Room</button>
+                <button id="join-room-btn" class="secondary-btn">Join Room</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Room Screen -->
+    <div id="create-room" class="screen">
+        <div class="container">
+            <h2>Create New Room</h2>
+            <div class="room-settings">
+                <label for="word-count">Number of words:</label>
+                <input type="number" id="word-count" min="1" max="1000" value="25" placeholder="Enter number of words...">
+            </div>
+            <div class="menu-buttons">
+                <button id="create-btn" class="primary-btn">Create Room</button>
+                <button id="back-from-create" class="secondary-btn">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Join Room Screen -->
+    <div id="join-room" class="screen">
+        <div class="container">
+            <h2>Join Room</h2>
+            <div class="room-settings">
+                <input type="text" id="room-id-input" placeholder="Enter Room ID..." maxlength="6">
+            </div>
+            <div class="menu-buttons">
+                <button id="join-btn" class="primary-btn">Join Room</button>
+                <button id="back-from-join" class="secondary-btn">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Waiting Room Screen -->
+    <div id="waiting-room" class="screen">
+        <div class="container">
+            <h2>Waiting Room</h2>
+            <div id="room-info">
+                <p>Room ID: <span id="current-room-id" class="room-id-display"></span></p>
+                <p>Words: <span id="current-word-count"></span></p>
+            </div>
+            <div id="players-list">
+                <div class="player-status" id="player1-status">
+                    <span class="player-name">Waiting for player...</span>
+                    <span class="ready-status">❌ Not Ready</span>
+                </div>
+                <div class="player-status" id="player2-status">
+                    <span class="player-name">Waiting for player...</span>
+                    <span class="ready-status">❌ Not Ready</span>
+                </div>
+            </div>
+            <div class="menu-buttons">
+                <button id="ready-btn" class="primary-btn" disabled>Ready</button>
+                <button id="leave-room-btn" class="secondary-btn">Leave Room</button>
+            </div>
+            <div id="waiting-message">
+                <p>Share the Room ID with your friend!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen">
+        <div class="container">
+            <div class="game-header">
+                <h2>🏆 Spelling Battle</h2>
+                <div class="players-score">
+                    <div class="player-score" id="my-score">
+                        <h3 id="my-name">You</h3>
+                        <p>Correct: <span id="my-correct">0</span></p>
+                        <p>Wrong: <span id="my-wrong">0</span></p>
+                        <div class="progress-bar">
+                            <div class="progress" id="my-progress"></div>
+                        </div>
+                    </div>
+                    <div class="vs-divider">VS</div>
+                    <div class="player-score" id="opponent-score">
+                        <h3 id="opponent-name">Opponent</h3>
+                        <p>Correct: <span id="opponent-correct">0</span></p>
+                        <p>Wrong: <span id="opponent-wrong">0</span></p>
+                        <div class="progress-bar">
+                            <div class="progress" id="opponent-progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="word-container">
+                <p id="current-word">?</p>
+                <button id="speak-btn">🔊 Speak Word</button>
+            </div>
+            
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Type the word here..." autocomplete="off" spellcheck="false">
+                <button id="check-btn">Check</button>
+                <button id="next-btn" disabled>Next</button>
+            </div>
+            
+            <div id="result"></div>
+            
+            <div class="word-info">
+                <p>Word <span id="current-word-number">1</span> of <span id="total-words">25</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Screen -->
+    <div id="results-screen" class="screen">
+        <div class="container">
+            <div id="winner-announcement"></div>
+            <div class="final-results">
+                <div class="player-final-score" id="player1-final">
+                    <h3 id="player1-final-name">Player 1</h3>
+                    <div class="score-summary">
+                        <p>Correct: <span id="player1-final-correct">0</span></p>
+                        <p>Wrong: <span id="player1-final-wrong">0</span></p>
+                        <p>Accuracy: <span id="player1-final-accuracy">0%</span></p>
+                    </div>
+                    <div class="mistakes-section">
+                        <h4>Mistakes:</h4>
+                        <ul id="player1-mistakes"></ul>
+                    </div>
+                </div>
+                
+                <div class="player-final-score" id="player2-final">
+                    <h3 id="player2-final-name">Player 2</h3>
+                    <div class="score-summary">
+                        <p>Correct: <span id="player2-final-correct">0</span></p>
+                        <p>Wrong: <span id="player2-final-wrong">0</span></p>
+                        <p>Accuracy: <span id="player2-final-accuracy">0%</span></p>
+                    </div>
+                    <div class="mistakes-section">
+                        <h4>Mistakes:</h4>
+                        <ul id="player2-mistakes"></ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-buttons">
+                <button id="play-again-btn" class="primary-btn">Play Again</button>
+                <button id="main-menu-btn" class="secondary-btn">Main Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animations -->
+    <div id="confetti"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="multiplayer-script.js"></script>
+</body>
+</html> 
