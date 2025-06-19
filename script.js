@@ -26,6 +26,7 @@ const toggleIncorrectBtn = document.getElementById('toggle-incorrect-btn');
 const incorrectWordsList = document.getElementById('incorrect-words-list');
 const exportBtn = document.getElementById('export-btn');
 const apiToggle = document.getElementById('api-toggle');
+const practiceToggle = document.getElementById('practice-toggle');
 
 // Load dictionary cache from JSON file
 async function loadDictionaryCache() {
@@ -294,29 +295,47 @@ async function checkAnswer() {
 
     const userAnswer = userInput.value.trim().toLowerCase();
     const correctAnswer = currentWord.toLowerCase();
-
-    totalAsked++;
-    totalElement.textContent = totalAsked;
-    totalIncorrectElement.textContent = totalAsked;
+    const isPracticeMode = practiceToggle.checked;
 
     let resultText = '';
     let resultClass = '';
+    let isCorrect = userAnswer === correctAnswer;
 
-    if (userAnswer === correctAnswer) {
+    if (isCorrect) {
+        // Only increment counts when answer is correct or not in practice mode
+        if (!isChecked) {
+            totalAsked++;
+            totalElement.textContent = totalAsked;
+            totalIncorrectElement.textContent = totalAsked;
+        }
+        
         correctCount++;
         correctCountElement.textContent = correctCount;
         resultText = 'Correct!';
         resultClass = 'correct';
     } else {
-        incorrectCount++;
-        incorrectCountElement.textContent = incorrectCount;
-        incorrectWords.push({
-            correct: currentWord,
-            userSpelling: userInput.value.trim()
-        });
-        updateIncorrectWordsList();
-        resultText = `Incorrect! The correct spelling is: ${currentWord}`;
-        resultClass = 'incorrect';
+        // In practice mode, don't count attempts until correct
+        if (!isPracticeMode) {
+            totalAsked++;
+            totalElement.textContent = totalAsked;
+            totalIncorrectElement.textContent = totalAsked;
+            
+            incorrectCount++;
+            incorrectCountElement.textContent = incorrectCount;
+            incorrectWords.push({
+                correct: currentWord,
+                userSpelling: userInput.value.trim()
+            });
+            updateIncorrectWordsList();
+        }
+        
+        if (isPracticeMode) {
+            resultText = `Incorrect! The correct spelling is: ${currentWord}. Try again!`;
+            resultClass = 'incorrect';
+        } else {
+            resultText = `Incorrect! The correct spelling is: ${currentWord}`;
+            resultClass = 'incorrect';
+        }
     }
 
     // Fetch and display word meaning
@@ -326,6 +345,14 @@ async function checkAnswer() {
     const meaningHtml = displayWordMeaning(meaningData);
     
     resultElement.innerHTML = `<div class="${resultClass}">${resultText}</div>${meaningHtml}`;
+
+    // In practice mode, only proceed if answer is correct
+    if (isPracticeMode && !isCorrect) {
+        // Clear input and allow another attempt
+        userInput.value = '';
+        userInput.focus();
+        return; // Don't set isChecked, keep inputs enabled
+    }
 
     isChecked = true;
     userInput.disabled = true;
@@ -356,6 +383,18 @@ exportBtn.addEventListener('click', exportDictionary);
 apiToggle.addEventListener('change', function() {
     const status = this.checked ? 'enabled' : 'disabled';
     console.log(`Dictionary API calls ${status}`);
+});
+
+// Practice mode toggle event listener
+practiceToggle.addEventListener('change', function() {
+    const status = this.checked ? 'enabled' : 'disabled';
+    console.log(`Practice mode ${status}`);
+    
+    if (this.checked) {
+        console.log('Practice mode: You must spell words correctly to proceed');
+    } else {
+        console.log('Practice mode: You can proceed after seeing the correct spelling');
+    }
 });
 
 // Add Enter key listener to input field

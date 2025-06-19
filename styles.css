@@ -174,7 +174,8 @@ button:disabled {
     background-color: #F57C00;
 }
 
-.api-toggle-container {
+.api-toggle-container,
+.practice-toggle-container {
     display: flex;
     align-items: center;
     gap: 0.5rem;

@@ -5290,5 +5290,1013 @@
     "definition": "Stubbornness.",
     "phonetic": "/ˈstʌbən/",
     "example": ""
+  },
+  "glorious": {
+    "partOfSpeech": "adjective",
+    "definition": "Exhibiting attributes, qualities, or acts that are worthy of or receive glory.",
+    "phonetic": "/ˈɡlɔː.ɹi.əs/",
+    "example": "glorious deeds"
+  },
+  "frustration": {
+    "partOfSpeech": "noun",
+    "definition": "The feeling of annoyance when one's actions are criticized or hindered",
+    "phonetic": "/fɹʌsˈtɹeɪʃən/",
+    "example": ""
+  },
+  "allegedly": {
+    "partOfSpeech": "adverb",
+    "definition": "According to someone's allegation.",
+    "phonetic": "",
+    "example": "The suspect was allegedly involved in the robbery, but his alibi placed him in another state at the time."
+  },
+  "cesspools": {
+    "partOfSpeech": "noun",
+    "definition": "An underground pit where sewage is held.",
+    "phonetic": "",
+    "example": ""
+  },
+  "gravels": {
+    "partOfSpeech": "verb",
+    "definition": "To apply a layer of gravel to the surface of a road, etc.",
+    "phonetic": "",
+    "example": ""
+  },
+  "gruesome": {
+    "partOfSpeech": "adjective",
+    "definition": "Repellently frightful and shocking; horrific or ghastly.",
+    "phonetic": "",
+    "example": ""
+  },
+  "worsening": {
+    "partOfSpeech": "verb",
+    "definition": "To make worse; to impair.",
+    "phonetic": "",
+    "example": "The global warming has worsened the weather."
+  },
+  "contending": {
+    "partOfSpeech": "verb",
+    "definition": "To strive in opposition; to contest; to dispute; to vie; to quarrel; to fight.",
+    "phonetic": "",
+    "example": ""
+  },
+  "coalition": {
+    "partOfSpeech": "noun",
+    "definition": "A temporary group or union of organizations, usually formed for a particular advantage.",
+    "phonetic": "/koʊəˈlɪʃən/",
+    "example": "The Liberal Democrats and Conservative parties formed a coalition government in 2010."
+  },
+  "clinches": {
+    "partOfSpeech": "verb",
+    "definition": "To clasp; to interlock.",
+    "phonetic": "",
+    "example": ""
+  },
+  "deterrence": {
+    "partOfSpeech": "noun",
+    "definition": "The act of deterring, or the state of being deterred.",
+    "phonetic": "/dɪˈtɛɹəns/",
+    "example": ""
+  },
+  "exterior": {
+    "partOfSpeech": "noun",
+    "definition": "The outside part, parts or surface of something.",
+    "phonetic": "/ɛkˈstɪəɹɪə/",
+    "example": "The sticker was attached to the exterior of the package"
+  },
+  "generosity": {
+    "partOfSpeech": "noun",
+    "definition": "The trait of being willing to donate money, time or resources.",
+    "phonetic": "/ˌd͡ʒɛnəˈɹɒsɪti/",
+    "example": ""
+  },
+  "erstwhile": {
+    "partOfSpeech": "adjective",
+    "definition": "Former, previous.",
+    "phonetic": "/ˈɜː(ɹ)st.waɪl/",
+    "example": ""
+  },
+  "symbolized": {
+    "partOfSpeech": "verb",
+    "definition": "To be symbolic of; to represent.",
+    "phonetic": "",
+    "example": ""
+  },
+  "explore": {
+    "partOfSpeech": "noun",
+    "definition": "An exploration; a tour of a place to see what it is like.",
+    "phonetic": "/ɪkˈsplɔː/",
+    "example": ""
+  },
+  "tolerated": {
+    "partOfSpeech": "verb",
+    "definition": "To accept hardship without objection.",
+    "phonetic": "",
+    "example": "I can tolerate working on Saturdays, but not on Sundays."
+  },
+  "uncompromising": {
+    "partOfSpeech": "adjective",
+    "definition": "Inflexible and unwilling to negotiate or make concessions.",
+    "phonetic": "",
+    "example": ""
+  },
+  "assemblage": {
+    "partOfSpeech": "noun",
+    "definition": "The process of assembling or bringing together.",
+    "phonetic": "",
+    "example": "the assemblage of words and recordings"
+  },
+  "versatile": {
+    "partOfSpeech": "adjective",
+    "definition": "Capable of doing many things competently.",
+    "phonetic": "/ˈvɝsətl̩/",
+    "example": ""
+  },
+  "projection": {
+    "partOfSpeech": "noun",
+    "definition": "Something which projects, protrudes, juts out, sticks out, or stands out.",
+    "phonetic": "/pɹəˈdʒɛkʃən/",
+    "example": "The face of the cliff had many projections that were big enough for birds to nest on."
+  },
+  "embankment": {
+    "partOfSpeech": "noun",
+    "definition": "A long mound of earth, stone, or similar material, usually built for purposes such as to hold back or store water, for protection from weather or enemies, or to support a road or railway.",
+    "phonetic": "",
+    "example": ""
+  },
+  "anonymity": {
+    "partOfSpeech": "noun",
+    "definition": "The quality or state of being anonymous; anonymousness.",
+    "phonetic": "/ænəˈnɪmɪti/",
+    "example": ""
+  },
+  "consecutive": {
+    "partOfSpeech": "noun",
+    "definition": "A sequence of notes or chords that results from repeated shifts in pitch of the same interval.",
+    "phonetic": "/kɒnsɛkjʊtɪv/",
+    "example": ""
+  },
+  "prompting": {
+    "partOfSpeech": "verb",
+    "definition": "To lead (someone) toward what they should say or do.",
+    "phonetic": "",
+    "example": "I prompted him to get a new job."
+  },
+  "unsettling": {
+    "partOfSpeech": "verb",
+    "definition": "To make upset or uncomfortable",
+    "phonetic": "",
+    "example": "Don't unsettle the horses or they'll bolt."
+  },
+  "outskirts": {
+    "partOfSpeech": "noun",
+    "definition": "The area surrounding a city or town; suburb.",
+    "phonetic": "/ˈaʊtskɜːts/",
+    "example": "He lived on the outskirts of Paris for a time."
+  },
+  "dumping": {
+    "partOfSpeech": "verb",
+    "definition": "To release, especially in large quantities and chaotic manner.",
+    "phonetic": "/ˈdʌmpɪŋ/",
+    "example": ""
+  },
+  "severed": {
+    "partOfSpeech": "verb",
+    "definition": "To cut free.",
+    "phonetic": "",
+    "example": "After he graduated, he severed all links to his family."
+  },
+  "sequence": {
+    "partOfSpeech": "noun",
+    "definition": "A set of things next to each other in a set order; a series",
+    "phonetic": "/ˈsiːkwəns/",
+    "example": ""
+  },
+  "dismembered": {
+    "partOfSpeech": "verb",
+    "definition": "To remove the limbs of.",
+    "phonetic": "",
+    "example": "Death by drawing and quartering usually dismembered the condemned person."
+  },
+  "detection": {
+    "partOfSpeech": "noun",
+    "definition": "The act of detecting or sensing something; discovering something that was hidden or disguised.",
+    "phonetic": "/dəˈtɛkʃən/",
+    "example": ""
+  },
+  "obliterate": {
+    "partOfSpeech": "verb",
+    "definition": "To remove completely, leaving no trace; to wipe out; to destroy.",
+    "phonetic": "/əbˈlɪtəɹeɪt/",
+    "example": ""
+  },
+  "litigation": {
+    "partOfSpeech": "noun",
+    "definition": "The conduct of a lawsuit.",
+    "phonetic": "/ˌlɪtəˈɡeɪʃən/",
+    "example": "That attorney has been chastised for his litigation behavior."
+  },
+  "cognizance": {
+    "partOfSpeech": "noun",
+    "definition": "An emblem, badge or device, used as a distinguishing mark by the body of retainers of a royal or noble house.",
+    "phonetic": "/ˈkɒɡnɪzəns/",
+    "example": ""
+  },
+  "isolated": {
+    "partOfSpeech": "verb",
+    "definition": "To set apart or cut off from others.",
+    "phonetic": "/ˈaɪsəleɪtɪd/",
+    "example": ""
+  },
+  "commemorate": {
+    "partOfSpeech": "verb",
+    "definition": "To honour the memory of someone or something with a ceremony or object.",
+    "phonetic": "/kəˈmɛməˌɹeɪt/",
+    "example": "On November 11th we commemorate the fallen with a march."
+  },
+  "enthralled": {
+    "partOfSpeech": "verb",
+    "definition": "To hold spellbound; to bewitch, charm or captivate.",
+    "phonetic": "",
+    "example": ""
+  },
+  "misinterpret": {
+    "partOfSpeech": "verb",
+    "definition": "To make an incorrect interpretation; to misunderstand.",
+    "phonetic": "",
+    "example": ""
+  },
+  "envision": {
+    "partOfSpeech": "verb",
+    "definition": "To conceive or see something within one's mind. To imagine.",
+    "phonetic": "",
+    "example": ""
+  },
+  "collyrium": {
+    "partOfSpeech": "noun",
+    "definition": "A lotion or liquid wash used as a cleanser for the eyes; an eye-salve.",
+    "phonetic": "/kəˈlɪɹɪəm/",
+    "example": ""
+  },
+  "ultimatum": {
+    "partOfSpeech": "noun",
+    "definition": "A final statement of terms or conditions made by one party to another, especially one that expresses a threat of reprisal or war.",
+    "phonetic": "/ˌʌl.tɪˈmeɪ.təm/",
+    "example": ""
+  },
+  "precedents": {
+    "partOfSpeech": "noun",
+    "definition": "An act in the past which may be used as an example to help decide the outcome of similar instances in the future.",
+    "phonetic": "",
+    "example": ""
+  },
+  "innumerable": {
+    "partOfSpeech": "adjective",
+    "definition": "Not capable of being counted, enumerated, or numbered, hence, indefinitely numerous; of great number.",
+    "phonetic": "/ɪˈnjuːməɹ.əbəl/",
+    "example": "The casualties of the Second World War were so great that they are innumerable."
+  },
+  "transformational": {
+    "partOfSpeech": "adjective",
+    "definition": "Of, pertaining to or leading to transformation",
+    "phonetic": "",
+    "example": ""
+  },
+  "rebranded": {
+    "partOfSpeech": "verb",
+    "definition": "To change the brand name, logo, or image of a product or company.",
+    "phonetic": "",
+    "example": "Acme Co. is trying to rebrand their line of toasters under the Bewidget name."
+  },
+  "interference": {
+    "partOfSpeech": "noun",
+    "definition": "The act of interfering with something, or something that interferes.",
+    "phonetic": "/ˌɪntəɹˈfiɹɨns/",
+    "example": ""
+  },
+  "subleasing": {
+    "partOfSpeech": "verb",
+    "definition": "To lease something that is already leased; to sublet.",
+    "phonetic": "",
+    "example": ""
+  },
+  "succumbing": {
+    "partOfSpeech": "verb",
+    "definition": "To yield to an overpowering force or overwhelming desire.",
+    "phonetic": "",
+    "example": "Thai culture as in many other Asian cultures, is succumbing to the influence of westernization."
+  },
+  "bribery": {
+    "partOfSpeech": "noun",
+    "definition": "The making of illegal payment, or bribes, to persons in official positions as a means of influencing their decisions",
+    "phonetic": "/ˈbɹaɪbəɹi/",
+    "example": ""
+  },
+  "profound": {
+    "partOfSpeech": "noun",
+    "definition": "The deep; the sea; the ocean.",
+    "phonetic": "/pɹəˈfaʊnd/",
+    "example": ""
+  },
+  "visualization": {
+    "partOfSpeech": "noun",
+    "definition": "The act of visualizing, or something visualized.",
+    "phonetic": "",
+    "example": ""
+  },
+  "gesture": {
+    "partOfSpeech": "noun",
+    "definition": "A motion of the limbs or body, especially one made to emphasize speech.",
+    "phonetic": "/ˈdʒɛs.tʃɚ/",
+    "example": "The middle-finger gesture is really a nonverbal swear."
+  },
+  "audience": {
+    "partOfSpeech": "noun",
+    "definition": "A group of people within hearing; specifically, a large gathering of people listening to or watching a performance, speech, etc.",
+    "phonetic": "/ˈɔːdi.əns/",
+    "example": "We joined the audience just as the lights went down."
+  },
+  "engulfed": {
+    "partOfSpeech": "verb",
+    "definition": "To overwhelm.",
+    "phonetic": "",
+    "example": "Desperation engulfed her after her daughter's death."
+  },
+  "franchise": {
+    "partOfSpeech": "noun",
+    "definition": "The right to vote at a public election or referendum; see: suffrage, suffragette.",
+    "phonetic": "/ˈfɹænt͡ʃaɪ̯z/",
+    "example": ""
+  },
+  "contingent": {
+    "partOfSpeech": "noun",
+    "definition": "An event which may or may not happen; that which is unforeseen, undetermined, or dependent on something future.",
+    "phonetic": "/kənˈtɪn.dʒənt/",
+    "example": ""
+  },
+  "bereaved": {
+    "partOfSpeech": "verb",
+    "definition": "To deprive by or as if by violence; to rob; to strip; to benim.",
+    "phonetic": "/bɪˈriːvd/",
+    "example": ""
+  },
+  "absolutely": {
+    "partOfSpeech": "adverb",
+    "definition": "In an absolute or unconditional manner; utterly, positively, wholly.",
+    "phonetic": "/æb.səˈl(j)uːt.lɪ/",
+    "example": ""
+  },
+  "refrained": {
+    "partOfSpeech": "verb",
+    "definition": "To hold back, to restrain (someone or something).",
+    "phonetic": "",
+    "example": ""
+  },
+  "cumbersome": {
+    "partOfSpeech": "adjective",
+    "definition": "Burdensome or hindering, as a weight or drag; vexatious",
+    "phonetic": "/ˈkʌmbɚsəm/",
+    "example": ""
+  },
+  "accessibility": {
+    "partOfSpeech": "noun",
+    "definition": "The quality of being accessible, or of admitting approach; receptiveness.",
+    "phonetic": "/ækˌsɛs.əˈbɪl.ət.i/",
+    "example": ""
+  },
+  "profitable": {
+    "partOfSpeech": "adjective",
+    "definition": "Producing a profit.",
+    "phonetic": "/ˈpɹɒfɪtəbl̩/",
+    "example": ""
+  },
+  "immensely": {
+    "partOfSpeech": "adverb",
+    "definition": "Greatly; hugely; extremely; vastly; to a great extent.",
+    "phonetic": "/ɪˈmɛnsli/",
+    "example": "I enjoyed the party immensely."
+  },
+  "poacher": {
+    "partOfSpeech": "noun",
+    "definition": "A person who trespasses in order to take game illegally, one who poaches; a person who illegally takes animals or plants from the wild.",
+    "phonetic": "/ˈpəʊ.tʃə/",
+    "example": ""
+  },
+  "excruciating": {
+    "partOfSpeech": "adjective",
+    "definition": "Causing great pain or anguish, agonizing",
+    "phonetic": "/ɛkˈskɹuːʃiːeɪtɪŋ/",
+    "example": ""
+  },
+  "blistered": {
+    "partOfSpeech": "verb",
+    "definition": "To raise blisters on.",
+    "phonetic": "",
+    "example": "a chemical agent that blisters the skin"
+  },
+  "pitiable": {
+    "partOfSpeech": "adjective",
+    "definition": "That deserves, evokes or can be given pity; pitiful.",
+    "phonetic": "/ˈpɪti.əbəl/",
+    "example": ""
+  },
+  "denigrate": {
+    "partOfSpeech": "verb",
+    "definition": "To criticise so as to besmirch; traduce, disparage or defame.",
+    "phonetic": "/ˈdɛn.ɪ.ɡɹeɪt/",
+    "example": ""
+  },
+  "dramatize": {
+    "partOfSpeech": "verb",
+    "definition": "To adapt a literary work so that it can be performed in the theatre, or on radio or television",
+    "phonetic": "",
+    "example": ""
+  },
+  "applause": {
+    "partOfSpeech": "noun",
+    "definition": "The act of applauding; approbation and praise publicly expressed by the clapping of hands, stamping or tapping of the feet, acclamation, huzzas, or other means; marked commendation.",
+    "phonetic": "/əˈplɔːz/",
+    "example": ""
+  },
+  "affirmed": {
+    "partOfSpeech": "verb",
+    "definition": "To agree, verify or concur; to answer positively.",
+    "phonetic": "",
+    "example": "She affirmed that she would go when I asked her."
+  },
+  "vandalism": {
+    "partOfSpeech": "noun",
+    "definition": "Willful damage to or destruction of any property, such as graffiti or defacement.",
+    "phonetic": "/ˈvændəlɪzm̩/",
+    "example": "As we turned down the street I was appalled by the vandalism: spray paint and smashed windows that were everywhere."
+  },
+  "intensifying": {
+    "partOfSpeech": "verb",
+    "definition": "To render more intense",
+    "phonetic": "",
+    "example": "to intensify a photographic negative"
+  },
+  "spectacle": {
+    "partOfSpeech": "noun",
+    "definition": "An exciting or extraordinary scene, exhibition, performance etc.",
+    "phonetic": "/ˈspɛktəkl̩/",
+    "example": "The horse race was a thrilling spectacle."
+  },
+  "amusement": {
+    "partOfSpeech": "noun",
+    "definition": "Entertainment.",
+    "phonetic": "/əˈmjuzmənt/",
+    "example": ""
+  },
+  "malediction": {
+    "partOfSpeech": "noun",
+    "definition": "A curse.",
+    "phonetic": "",
+    "example": ""
+  },
+  "intended": {
+    "partOfSpeech": "verb",
+    "definition": "(usually followed by the particle \"to\") To hope; to wish (something, or something to be accomplished); be intent upon",
+    "phonetic": "/ɪnˈtɛndɪd/",
+    "example": "He intends to go to university."
+  },
+  "outrage": {
+    "partOfSpeech": "noun",
+    "definition": "An excessively violent or vicious attack; an atrocity.",
+    "phonetic": "/ˈæot.ɹæed͡ʒ/",
+    "example": ""
+  },
+  "reckoning": {
+    "partOfSpeech": "verb",
+    "definition": "To count; to enumerate; to number; also, to compute; to calculate.",
+    "phonetic": "/ˈɹɛkənɪŋ/",
+    "example": ""
+  },
+  "deploying": {
+    "partOfSpeech": "verb",
+    "definition": "To prepare and arrange (usually military unit or units) for use.",
+    "phonetic": "",
+    "example": "\"Deploy two units of infantry along the enemy's flank,\" the general ordered."
+  },
+  "grappling": {
+    "partOfSpeech": "verb",
+    "definition": "To seize something and hold it firmly.",
+    "phonetic": "/ˈɡɹæp(ə)lɪŋ/",
+    "example": ""
+  },
+  "declined": {
+    "partOfSpeech": "verb",
+    "definition": "To move downwards, to fall, to drop.",
+    "phonetic": "/dɪˈklaɪnd/",
+    "example": "The dollar has declined rapidly since 2001."
+  },
+  "domesticate": {
+    "partOfSpeech": "noun",
+    "definition": "An animal or plant that has been domesticated.",
+    "phonetic": "",
+    "example": ""
+  },
+  "mawkish": {
+    "partOfSpeech": "adjective",
+    "definition": "Feeling sick, queasy.",
+    "phonetic": "/ˈmɑːkɪʃ/",
+    "example": ""
+  },
+  "disposable": {
+    "partOfSpeech": "noun",
+    "definition": "Any object that is designed to be disposed of rather than refilled or repaired.",
+    "phonetic": "/dɪsˈpəʊzəbl̩/",
+    "example": ""
+  },
+  "discretionary": {
+    "partOfSpeech": "adjective",
+    "definition": "Available at one's discretion; able to be used as one chooses; left to or regulated by one's own discretion or judgment.",
+    "phonetic": "/dɪˈskɹɛʃən(ə)ɹi/",
+    "example": "discretionary income"
+  },
+  "constituency": {
+    "partOfSpeech": "noun",
+    "definition": "A district represented by one or more elected officials.",
+    "phonetic": "",
+    "example": "John was elected to parliament from the Bedford constituency."
+  },
+  "decongesting": {
+    "partOfSpeech": "verb",
+    "definition": "To free from congestion",
+    "phonetic": "",
+    "example": ""
+  },
+  "meritorious": {
+    "partOfSpeech": "adjective",
+    "definition": "Deserving of merit or commendation; deserving reward.",
+    "phonetic": "/ˌmɛɹɪˈtoʊɹi.əs/",
+    "example": "The policeman received the Award of Meritorious Service from his grateful department."
+  },
+  "malodorous": {
+    "partOfSpeech": "adjective",
+    "definition": "Having a bad odor.",
+    "phonetic": "/ˌmælˈəʊ.də.ɹəs/",
+    "example": "There were tons of malodorous garbage bags outside her house."
+  },
+  "repurposed": {
+    "partOfSpeech": "verb",
+    "definition": "To reuse for a different purpose, on a long-term basis, without alteration.",
+    "phonetic": "",
+    "example": "The town common was repurposed as a practice field."
+  },
+  "extracurricular": {
+    "partOfSpeech": "noun",
+    "definition": "An activity outside the normal academic curriculum.",
+    "phonetic": "",
+    "example": ""
+  },
+  "initiative": {
+    "partOfSpeech": "noun",
+    "definition": "A beginning; a first move.",
+    "phonetic": "/ɪˈnɪʃətɪv/",
+    "example": ""
+  },
+  "distinguish": {
+    "partOfSpeech": "verb",
+    "definition": "To recognize someone or something as different from others based on its characteristics.",
+    "phonetic": "/dɪsˈtɪŋɡwɪʃ/",
+    "example": ""
+  },
+  "enduring": {
+    "partOfSpeech": "verb",
+    "definition": "To continue or carry on, despite obstacles or hardships; to persist.",
+    "phonetic": "/ɪnˈdjɔːɹɪŋ/",
+    "example": "The singer's popularity endured for decades."
+  },
+  "commemorative": {
+    "partOfSpeech": "noun",
+    "definition": "An object made to commemorate a person, mark an event, etc.",
+    "phonetic": "",
+    "example": ""
+  },
+  "recognition": {
+    "partOfSpeech": "noun",
+    "definition": "The act of recognizing or the condition of being recognized (matching a current observation with a memory of a prior observation of the same entity)",
+    "phonetic": "/ˌɹɛkəɡˈnɪʃən/",
+    "example": "He looked at her for ten full minutes before recognition dawned."
+  },
+  "trademark": {
+    "partOfSpeech": "noun",
+    "definition": "A word, symbol, or phrase used to identify a particular company's product and differentiate it from other companies' products.",
+    "phonetic": "/ˈtɹeɪdmɑː(ɹ)k/",
+    "example": ""
+  },
+  "cerebral": {
+    "partOfSpeech": "adjective",
+    "definition": "Of, or relating to the brain, cerebrum, or cerebral cortex.",
+    "phonetic": "",
+    "example": ""
+  },
+  "tombstones": {
+    "partOfSpeech": "noun",
+    "definition": "A headstone marking a person's grave.",
+    "phonetic": "",
+    "example": ""
+  },
+  "prevent": {
+    "partOfSpeech": "verb",
+    "definition": "To stop (an outcome); to keep from (doing something).",
+    "phonetic": "/pɹəˈvɛnt/",
+    "example": "I brush my teeth regularly to prevent them from turning yellow."
+  },
+  "defacement": {
+    "partOfSpeech": "noun",
+    "definition": "An act of defacing; an instance of visibly marring or disfiguring something.",
+    "phonetic": "/dɪˈfeɪsmənt/",
+    "example": "Some consider the defacement of the Sphinx to be the most egregious crime of Napolean's campaigns."
+  },
+  "deterrent": {
+    "partOfSpeech": "noun",
+    "definition": "Something that deters.",
+    "phonetic": "/dɪˈtɛɹənt/",
+    "example": ""
+  },
+  "incorporated": {
+    "partOfSpeech": "verb",
+    "definition": "To include (something) as a part.",
+    "phonetic": "",
+    "example": "The design of his house incorporates a spiral staircase."
+  },
+  "interventions": {
+    "partOfSpeech": "noun",
+    "definition": "The action of intervening; interfering in some course of events.",
+    "phonetic": "",
+    "example": ""
+  },
+  "emulation": {
+    "partOfSpeech": "noun",
+    "definition": "The endeavor or desire to equal or excel someone else in qualities or actions.",
+    "phonetic": "/ɛmjʊˈleɪʃən/",
+    "example": "a great figure who is worthy of respect and emulation"
+  },
+  "entrepreneurial": {
+    "partOfSpeech": "adjective",
+    "definition": "Having the spirit, attitude or qualities of an entrepreneur; enterprising.",
+    "phonetic": "/ˌɒntɹəpɹəˈnɜːɹi.əl/",
+    "example": ""
+  },
+  "opulent": {
+    "partOfSpeech": "adjective",
+    "definition": "Luxuriant, and ostentatiously magnificent.",
+    "phonetic": "",
+    "example": ""
+  },
+  "exclusionary": {
+    "partOfSpeech": "adjective",
+    "definition": "Acting to exclude something",
+    "phonetic": "",
+    "example": "Social groups are often exclusionary."
+  },
+  "flexing": {
+    "partOfSpeech": "verb",
+    "definition": "To bend something.",
+    "phonetic": "/ˈflɛksɪŋ/",
+    "example": ""
+  },
+  "extravagant": {
+    "partOfSpeech": "adjective",
+    "definition": "Exceeding the bounds of something; roving; hence, foreign.",
+    "phonetic": "/ɪkˈstɹævəɡənt/",
+    "example": ""
+  },
+  "millionaires": {
+    "partOfSpeech": "noun",
+    "definition": "(strictly) A person whose net worth is at or greater than one million units of the local currency, but less than two million.",
+    "phonetic": "",
+    "example": ""
+  },
+  "universally": {
+    "partOfSpeech": "adverb",
+    "definition": "In a universal manner.",
+    "phonetic": "/ˌjuːnɪˈvɜːsəli/",
+    "example": ""
+  },
+  "rehearsal": {
+    "partOfSpeech": "noun",
+    "definition": "The practicing of something which is to be performed before an audience, usually to test or improve the interaction between several participating people, or to allow technical adjustments with respect to staging to be done.",
+    "phonetic": "/ɹɪˈhɜː(ɹ)səl/",
+    "example": ""
+  },
+  "repercussions": {
+    "partOfSpeech": "noun",
+    "definition": "A consequence or ensuing result of some action.",
+    "phonetic": "",
+    "example": "You realize this little stunt of yours is going to have some pretty serious repercussions."
+  },
+  "jurisdiction": {
+    "partOfSpeech": "noun",
+    "definition": "The power, right, or authority to interpret and apply the law.",
+    "phonetic": "/d͡ʒɔːɹɪsˈdɪkʃən/",
+    "example": ""
+  },
+  "athletics": {
+    "partOfSpeech": "noun",
+    "definition": "(especially Britain) A group of sporting activities including track and field, road running, cross country and racewalking.",
+    "phonetic": "/æθˈlɛtɪks/",
+    "example": ""
+  },
+  "tournament": {
+    "partOfSpeech": "noun",
+    "definition": "During the Middle Ages, a series of battles and other contests designed to prepare knights for war.",
+    "phonetic": "/ˈtɔːnəmənt/",
+    "example": ""
+  },
+  "dereliction": {
+    "partOfSpeech": "noun",
+    "definition": "Willful neglect of one's duty.",
+    "phonetic": "/dɛɹ.ɪ.ˈlɪk.ʃən/",
+    "example": "The new soldier did not clean his cabin and was scolded for dereliction and disobedience."
+  },
+  "scathing": {
+    "partOfSpeech": "verb",
+    "definition": "To injure or harm.",
+    "phonetic": "",
+    "example": ""
+  },
+  "ferrying": {
+    "partOfSpeech": "verb",
+    "definition": "To carry; transport; convey.",
+    "phonetic": "",
+    "example": "Trucks plowed through the water to ferry flood victims to safety."
+  },
+  "frequently": {
+    "partOfSpeech": "adverb",
+    "definition": "At frequent intervals.",
+    "phonetic": "/ˈfɹiː.kwənt.li/",
+    "example": "This question arises frequently."
+  },
+  "simultaneously": {
+    "partOfSpeech": "adverb",
+    "definition": "Occurring at the same time.",
+    "phonetic": "/ˌsɪməlˈteɪnɪəsli/",
+    "example": ""
+  },
+  "compliance": {
+    "partOfSpeech": "noun",
+    "definition": "An act of complying.",
+    "phonetic": "/kəmˈplaɪəns/",
+    "example": ""
+  },
+  "flouting": {
+    "partOfSpeech": "verb",
+    "definition": "To express contempt for (laws, rules, etc.) by word or action.",
+    "phonetic": "[ˈflaʊ̯ɾɪŋ]",
+    "example": ""
+  },
+  "overcrowding": {
+    "partOfSpeech": "verb",
+    "definition": "To fill beyond reasonable limits, with people, animals, objects or information.",
+    "phonetic": "",
+    "example": ""
+  },
+  "unveiling": {
+    "partOfSpeech": "verb",
+    "definition": "To remove a veil from; to uncover; to reveal something hidden.",
+    "phonetic": "",
+    "example": ""
+  },
+  "monetize": {
+    "partOfSpeech": "verb",
+    "definition": "To convert something (especially a security) into currency.",
+    "phonetic": "/ˈmɒnətaɪz/",
+    "example": ""
+  },
+  "influencer": {
+    "partOfSpeech": "noun",
+    "definition": "A person who or a thing which influences.",
+    "phonetic": "",
+    "example": ""
+  },
+  "demographic": {
+    "partOfSpeech": "noun",
+    "definition": "(chiefly in plural) A demographic criterion: a characteristic used to classify people for statistical purposes, such as age, race, or gender.",
+    "phonetic": "/dɛməˈɡɹæfɪk/",
+    "example": ""
+  },
+  "exacerbate": {
+    "partOfSpeech": "verb",
+    "definition": "To make worse (a problem, bad situation, negative feeling, etc.); aggravate; exasperate.",
+    "phonetic": "/ɪkˈsæs-/",
+    "example": "The proposed shutdown would exacerbate unemployment problems."
+  },
+  "incontinence": {
+    "partOfSpeech": "noun",
+    "definition": "Lack of self-restraint, an inability to control oneself; unchastity.",
+    "phonetic": "/ɪnˈkɒntɪnəns/",
+    "example": ""
+  },
+  "irreparable": {
+    "partOfSpeech": "adjective",
+    "definition": "Incapable of being repaired, amended, cured or rectified; unrepairable.",
+    "phonetic": "/ɪˈɹɛp(ə)ɹəbəl/",
+    "example": ""
+  },
+  "nostalgic": {
+    "partOfSpeech": "noun",
+    "definition": "A person who displays nostalgia for something.",
+    "phonetic": "",
+    "example": ""
+  },
+  "unabated": {
+    "partOfSpeech": "adjective",
+    "definition": "Continuing at full strength or intensity",
+    "phonetic": "/ʌn.əˈbeɪ.tɪd/",
+    "example": ""
+  },
+  "environment": {
+    "partOfSpeech": "noun",
+    "definition": "The surroundings of, and influences on, a particular item of interest.",
+    "phonetic": "/-mɪnt/",
+    "example": ""
+  },
+  "groceries": {
+    "partOfSpeech": "noun",
+    "definition": "The commodities sold by a grocer or in a grocery store.",
+    "phonetic": "/ˈɡɹəʊs(ə)ɹiz/",
+    "example": "She carried a sack of groceries in from her car and placed it on the kitchen table."
+  },
+  "destitute": {
+    "partOfSpeech": "adjective",
+    "definition": "(followed by the preposition \"of\") Lacking something; devoid",
+    "phonetic": "/ˈdɛstɪtjuːt/",
+    "example": ""
+  },
+  "compassionate": {
+    "partOfSpeech": "verb",
+    "definition": "To feel compassion (for someone or with regard to something); to regard (someone or something) with compassion.",
+    "phonetic": "/kəmˈpæʃənət/",
+    "example": ""
+  },
+  "strewn": {
+    "partOfSpeech": "verb",
+    "definition": "(archaic except strewn) To distribute objects or pieces of something over an area, especially in a random manner.",
+    "phonetic": "/ˈstɹuːn/",
+    "example": "to strew sand over a floor"
+  },
+  "hospitality": {
+    "partOfSpeech": "noun",
+    "definition": "The act or service of welcoming, receiving, hosting, or entertaining guests.",
+    "phonetic": "/hɒs.pɪˈtæl.ɪ.ti/",
+    "example": "Please thank our hosts for their hospitality during the week that we stayed."
+  },
+  "marginalised": {
+    "partOfSpeech": "verb",
+    "definition": "To relegate (something, especially a topic or a group of people) to the margins or to a lower limit; to exclude socially or otherwise.",
+    "phonetic": "",
+    "example": ""
+  },
+  "obligated": {
+    "partOfSpeech": "verb",
+    "definition": "To bind, compel, constrain, or oblige by a social, legal, or moral tie.",
+    "phonetic": "",
+    "example": ""
+  },
+  "propagation": {
+    "partOfSpeech": "noun",
+    "definition": "The multiplication or natural increase in a population",
+    "phonetic": "",
+    "example": ""
+  },
+  "achiever": {
+    "partOfSpeech": "noun",
+    "definition": "One who achieves something.",
+    "phonetic": "",
+    "example": ""
+  },
+  "prerequisite": {
+    "partOfSpeech": "noun",
+    "definition": "Something that must be gained in order to gain something else",
+    "phonetic": "/pɹiːˈɹɛkwɪzɪt/",
+    "example": "A degree is a prerequisite for entry into this profession."
+  },
+  "moustaches": {
+    "partOfSpeech": "noun",
+    "definition": "A growth of facial hair between the nose and the upper lip.",
+    "phonetic": "",
+    "example": ""
+  },
+  "corrective": {
+    "partOfSpeech": "noun",
+    "definition": "Something that corrects or counteracts something.",
+    "phonetic": "",
+    "example": "alkalies are correctives of acids"
+  },
+  "inflammatory": {
+    "partOfSpeech": "noun",
+    "definition": "Any material that causes inflammation",
+    "phonetic": "",
+    "example": ""
+  },
+  "corroborated": {
+    "partOfSpeech": "verb",
+    "definition": "To confirm or support something with additional evidence; to attest or vouch for.",
+    "phonetic": "",
+    "example": ""
+  },
+  "conspirator": {
+    "partOfSpeech": "noun",
+    "definition": "One of a group that acts in harmony; a person who is part of a conspiracy.",
+    "phonetic": "/kənˈspɪɹətə/",
+    "example": ""
+  },
+  "hinterland": {
+    "partOfSpeech": "noun",
+    "definition": "The land immediately next to, and inland from, a coast.",
+    "phonetic": "/ˈhɪntə(ɹ)ˌlænd/",
+    "example": ""
+  },
+  "ascertain": {
+    "partOfSpeech": "verb",
+    "definition": "To find out definitely; to discover or establish.",
+    "phonetic": "/ˌæsəˈteɪn/",
+    "example": "As soon as we ascertain what the situation is, we can plan how to proceed."
+  },
+  "proprietor": {
+    "partOfSpeech": "noun",
+    "definition": "An owner.",
+    "phonetic": "/pɹəˈpɹaɪətɚ/",
+    "example": ""
+  },
+  "incomprehensible": {
+    "partOfSpeech": "noun",
+    "definition": "Anything that is beyond understanding.",
+    "phonetic": "/ˌɪnkɑmpɹəˈhɛnsɪbəl/",
+    "example": ""
+  },
+  "siphoned": {
+    "partOfSpeech": "verb",
+    "definition": "To transfer (liquid) by means of a siphon.",
+    "phonetic": "",
+    "example": ""
+  },
+  "laundering": {
+    "partOfSpeech": "verb",
+    "definition": "To wash; to wash, and to smooth with a flatiron or mangle; to wash and iron.",
+    "phonetic": "",
+    "example": ""
+  },
+  "communicable": {
+    "partOfSpeech": "adjective",
+    "definition": "(of a disease) Able to be transmitted between people or animals; contagious or catching.",
+    "phonetic": "",
+    "example": ""
+  },
+  "confirmation": {
+    "partOfSpeech": "noun",
+    "definition": "An official indicator that things will happen as planned.",
+    "phonetic": "/ˌkɒn.fəˈmeɪ.ʃən/",
+    "example": "We will send you a written confirmation of your hotel booking."
+  },
+  "visionary": {
+    "partOfSpeech": "noun",
+    "definition": "Someone who has visions; a seer",
+    "phonetic": "/ˈvɪʒn̩(ə)ɹi/",
+    "example": ""
+  },
+  "journalist": {
+    "partOfSpeech": "noun",
+    "definition": "The keeper of a personal journal, who writes in it regularly.",
+    "phonetic": "/ˈdʒɜːnəlɪst/",
+    "example": ""
+  },
+  "sensible": {
+    "partOfSpeech": "noun",
+    "definition": "Sensation; sensibility.",
+    "phonetic": "/ˈsen.sə.bl̩/",
+    "example": ""
+  },
+  "enormously": {
+    "partOfSpeech": "adverb",
+    "definition": "Extremely, greatly: to an enormous degree.",
+    "phonetic": "",
+    "example": "Gloria is enormously pleased with our progress."
+  },
+  "unceremonious": {
+    "partOfSpeech": "adjective",
+    "definition": "Not ceremonious.",
+    "phonetic": "",
+    "example": ""
+  },
+  "prevented": {
+    "partOfSpeech": "verb",
+    "definition": "To stop (an outcome); to keep from (doing something).",
+    "phonetic": "/pɹɪˈvɛntɪd/",
+    "example": "I brush my teeth regularly to prevent them from turning yellow."
+  },
+  "dismissal": {
+    "partOfSpeech": "noun",
+    "definition": "The act of sending someone away.",
+    "phonetic": "",
+    "example": ""
+  },
+  "discontent": {
+    "partOfSpeech": "noun",
+    "definition": "Dissatisfaction.",
+    "phonetic": "/ˌdɪskənˈtɛnt/",
+    "example": ""
   }
 }
